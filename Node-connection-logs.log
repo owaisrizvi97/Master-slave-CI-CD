@@ -1,0 +1,69 @@
+SSHLauncher{host='3.110.194.143', port=22, credentialsId='387763f3-0355-4322-9c11-c5a35c0ebffc', jvmOptions='', javaPath='/usr/bin/java', prefixStartSlaveCmd='', suffixStartSlaveCmd='', launchTimeoutSeconds=60, maxNumRetries=10, retryWaitTime=15, sshHostKeyVerificationStrategy=hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy, tcpNoDelay=true, trackCredentials=true}
+[09/25/23 17:11:20] [SSH] Opening SSH connection to 3.110.194.143:22.
+[09/25/23 17:11:20] [SSH] Authentication successful.
+[09/25/23 17:11:21] [SSH] The remote user's environment is:
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="1" [2]="16" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.1.16(1)-release'
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DIRSTACK=()
+EUID=1000
+GROUPS=()
+HOME=/home/ubuntu
+HOSTNAME=ip-172-31-12-179
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LOGNAME=ubuntu
+MACHTYPE=x86_64-pc-linux-gnu
+MOTD_SHOWN=pam
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PIPESTATUS=([0]="0")
+PPID=5918
+PS4='+ '
+PWD=/home/ubuntu
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='13.126.69.234 46150 22'
+SSH_CONNECTION='13.126.69.234 46150 172.31.12.179 22'
+TERM=dumb
+UID=1000
+USER=ubuntu
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=11
+XDG_SESSION_TYPE=tty
+_=']'
+[09/25/23 17:11:21] [SSH] Starting sftp client.
+[09/25/23 17:11:21] [SSH] Copying latest remoting.jar...
+[09/25/23 17:11:21] [SSH] Copied 1,371,441 bytes.
+Expanded the channel window size to 4MB
+[09/25/23 17:11:21] [SSH] Starting agent process: cd "/home/ubuntu/jenkins-slave" && /usr/bin/java  -jar remoting.jar -workDir /home/ubuntu/jenkins-slave -jar-cache /home/ubuntu/jenkins-slave/remoting/jarCache
+Sep 25, 2023 5:11:21 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /home/ubuntu/jenkins-slave/remoting as a remoting work directory
+Sep 25, 2023 5:11:22 PM org.jenkinsci.remoting.engine.WorkDirManager setupLogging
+INFO: Both error and output logs will be printed to /home/ubuntu/jenkins-slave/remoting
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Remoting version: 3148.v532a_7e715ee3
+Launcher: SSHLauncher
+Communication Protocol: Standard in/out
+This is a Unix agent
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by jenkins.slaves.StandardOutputSwapper$ChannelSwapper to constructor java.io.FileDescriptor(int)
+WARNING: Please consider reporting this to the maintainers of jenkins.slaves.StandardOutputSwapper$ChannelSwapper
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Evacuated stdout
+Agent successfully connected and online
